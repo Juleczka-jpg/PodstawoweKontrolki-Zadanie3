@@ -39,9 +39,9 @@ autor: Julia Nowakowska
         }
 *******************************************************************
 nazwa funkcji: UpdatePrice
-opis funkcji: Funkcja oblicza cenę koncową na podstawie pizzy, jej rodzaju ciasta i ilości.
-parametry: sender – obiekt wywołujący zdarzenie, e – argumenty zdarzenia
-zwracany typ i opis: Funkcja oblicza cenę końcową pizzy na podstawie wybranej wielkości, rodzaju ciasta oraz ilości sztuk. Następnie wyświetla wynik w etykiecie TotalPriceLabel.
+opis funkcji: Funkcja oblicza cenę końcową pizzy na podstawie wybranej wielkości, rodzaju ciasta oraz ilości sztuk. Następnie wyświetla wynik w etykiecie TotalPriceLabel.
+parametry: brak
+zwracany typ i opis: brak (void) – funkcja wyświetla cenę końcową.
 autor: Julia Nowakowska
 *******************************************************************
         private void UpdatePrice()
