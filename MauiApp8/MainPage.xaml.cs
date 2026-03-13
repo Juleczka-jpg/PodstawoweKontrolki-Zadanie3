@@ -11,6 +11,13 @@
             InitializeComponent();
             UpdatePrice();
         }
+*******************************************************************
+nazwa funkcji: OnOptionChanged
+opis funkcji: Funkcja sprawdza, jaką wybrano wielkość i grubość pizzy oraz ilość sztuk ustawionych w Stepperze. Na podstawie wartości RadioButtonów pobiera cenę i aktualizuje ilość. Na koniec wywołuje funkcję UpdatePrice().
+parametry: sender – obiekt wywołujący zdarzenie, e – argumenty zdarzenia
+zwracany typ i opis: brak(void) – funkcja wyswietla ilość sztuk pizzy.
+autor: Julia Nowakowska
+*******************************************************************
 
         private void OnOptionChanged(object sender, EventArgs e)
         {
@@ -30,7 +37,13 @@
 
             UpdatePrice();
         }
-
+*******************************************************************
+nazwa funkcji: UpdatePrice
+opis funkcji: Funkcja oblicza cenę koncową na podstawie pizzy, jej rodzaju ciasta i ilości.
+parametry: sender – obiekt wywołujący zdarzenie, e – argumenty zdarzenia
+zwracany typ i opis: Funkcja oblicza cenę końcową pizzy na podstawie wybranej wielkości, rodzaju ciasta oraz ilości sztuk. Następnie wyświetla wynik w etykiecie TotalPriceLabel.
+autor: Julia Nowakowska
+*******************************************************************
         private void UpdatePrice()
         {
             double total = (basePrice + doughExtra) * quantity;
